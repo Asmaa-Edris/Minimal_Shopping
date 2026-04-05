@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-page ,.all-products{
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #F6F6F6;
+}
+
+.products {
+    margin-top: 40px;
+    padding: 0 2%;
+    width: 100%;
+    box-sizing: border-box;
+  
+}
+
+.products-header p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #000000;
+}
+
+.products-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 24px;
+    width: 100%;
+      justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.product-card {
+   width:100%;
+  transition: transform 0.3s ease;
+  justify-content: center;
+align-items: center;
+
+}
+
+.product-image-wrapper {
+    position: relative;
+    width:100%;
+  height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+   border-radius: 16px;
+border: 1px solid #E0E0E0;
+background-color: #fcfcfc;
+
+
+}
+
+.product-image-wrapper img {
+
+    object-fit: cover;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #FFFFFF;
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000000;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.wishlist-btn:hover {
+    color: #FD346E;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-info {
+    padding: 16px 0;
+}
+
+.product-main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.product-info h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+.product-info .price {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.product-info .description {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.see-more-btn {
+    padding: 10px 40px;
+    border-radius: 31.5px;
+    text-decoration: none;
+    color: #F61B5A;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: #FFFFFF;
+}
+
+.see-more-btn:hover {
+    background-color: #F61B5A;
+    color: #FFFFFF;
+}
+
+
+
+/* Product Details Page */
+.product-details-page {
+    padding: 60px 10%;
+    background-color: #FFFFFF;
+    font-family: 'Airbnb Cereal App', sans-serif;
+}
+
+.product-details-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.product-details-layout .product-image {
+    flex: 1;
+    background-color: #F6F6F6;
+    overflow: hidden;
+    height: auto;
+    max-height: 800px;
+}
+
+.product-details-layout .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details-layout .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.product-new-badge {
+    display: inline-block;
+    background-color: #F0F2F5;
+    color: #2D3748;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    /* إضافة ظل خفيف للـ Badge */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-details-layout .product-info h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #1A202C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.product-details-layout .price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2D3748;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.product-details-layout .brand {
+    font-size: 14px;
+    color: #718096;
+    margin-bottom: 40px;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.product-details-layout .description {
+    font-size: 14px;
+    color: #4A5568;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 80%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.size-selector {
+    margin-bottom: 40px;
+}
+
+.size-selector > span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #4A5568;
+    
+
+}
+
+.size-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.size-btn {
+    width: 44px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-bottom: 3px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4A5568;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.size-btn:hover {
+    border-bottom-width: 1px;
+    transform: translateY(2px);
+    background: #F7FAFC;
+    box-shadow: none; 
+}
+
+.size-btn.active {
+    background: #E2E8F0;
+    border: 1px solid #CBD5E0;
+    border-bottom: 3px solid #CBD5E0;
+    color: #1A202C;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.add-cart {
+    background-color: transparent;
+    color: #F61B5A;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.2s ease;
+    width: 212px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.added-message {
+    margin-top: 10px;
+    color: #4A5568;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    width: 212px;
+    align-self: flex-start;
+}
