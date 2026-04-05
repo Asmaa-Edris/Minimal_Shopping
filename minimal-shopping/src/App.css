@@ -1,11 +1,10 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.home-page,
-.all-products {
+.home-page ,.all-products{
     width: 100%;
     margin: 0;
     padding: 20px 0;
@@ -17,7 +16,7 @@
     padding: 0 2%;
     width: 100%;
     box-sizing: border-box;
-
+  
 }
 
 .products-header p {
@@ -34,27 +33,30 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 40px 24px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+      justify-content: center;
+align-items: center;
+position: relative;
 }
 
 .product-card {
-    width: 100%;
-    transition: transform 0.3s ease;
-    justify-content: center;
-    align-items: center;
+   width:100%;
+  transition: transform 0.3s ease;
+  justify-content: center;
+align-items: center;
 
 }
 
 .product-image-wrapper {
     position: relative;
-    width: 100%;
-    height: 397px;
+    width:100%;
+  height: 320px;
     border-radius: 16px;
     overflow: hidden;
-    border: none;
-    background-color: #F6F6F6;
+   border-radius: 16px;
+border: 1px solid #E0E0E0;
+background-color: #fcfcfc;
+
+
 }
 
 .product-image-wrapper img {
@@ -103,19 +105,18 @@
 .product-info h3 {
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 70%;
-    color: #000000;
 }
 
 .product-info .price {
     font-family: 'Outfit', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     color: #000000;
 }
 
@@ -137,18 +138,21 @@
 
 .see-more-btn {
     padding: 10px 40px;
+    border-radius: 31.5px;
     text-decoration: none;
     color: #F61B5A;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
     font-weight: 500;
     transition: all 0.3s ease;
-    background-color: transparent;
+    background-color: #FFFFFF;
 }
 
 .see-more-btn:hover {
-    text-decoration: underline;
+    background-color: #F61B5A;
+    color: #FFFFFF;
 }
+
 
 
 /* Product Details Page */
@@ -196,6 +200,8 @@
     border-radius: 12px;
     margin-bottom: 20px;
     align-self: flex-start;
+    /* إضافة ظل خفيف للـ Badge */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .product-details-layout .product-info h1 {
@@ -203,6 +209,7 @@
     font-weight: bold;
     margin-bottom: 12px;
     color: #1A202C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
 
 .product-details-layout .price {
@@ -210,12 +217,15 @@
     font-weight: bold;
     margin-bottom: 30px;
     color: #2D3748;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .product-details-layout .brand {
     font-size: 14px;
     color: #718096;
     margin-bottom: 40px;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .product-details-layout .description {
@@ -224,18 +234,22 @@
     line-height: 1.8;
     margin-bottom: 40px;
     max-width: 80%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .size-selector {
     margin-bottom: 40px;
 }
 
-.size-selector>span {
+.size-selector > span {
     display: block;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 16px;
     color: #4A5568;
+    
+
 }
 
 .size-buttons {
@@ -258,12 +272,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .size-btn:hover {
     border-bottom-width: 1px;
     transform: translateY(2px);
     background: #F7FAFC;
+    box-shadow: none; 
 }
 
 .size-btn.active {
@@ -271,14 +287,16 @@
     border: 1px solid #CBD5E0;
     border-bottom: 3px solid #CBD5E0;
     color: #1A202C;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .add-cart {
     background-color: transparent;
     color: #F61B5A;
     border: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
     cursor: pointer;
     text-align: center;
     padding: 10px 0;
@@ -286,10 +304,6 @@
     width: 212px;
     align-self: flex-start;
     margin-top: 20px;
-}
-
-.add-cart:hover {
-    opacity: 0.8;
 }
 
 .added-message {

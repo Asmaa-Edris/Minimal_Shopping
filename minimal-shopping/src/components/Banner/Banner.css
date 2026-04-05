@@ -57,11 +57,3 @@
     line-height: 1.2;      
     margin: 0;
 }
-
-.highlight-box {
-    background-color: #FFB300; 
-    color: #000000;
-    padding: 2px 8px;
-    display: inline-block;
-    border-radius: 4px;
-}
