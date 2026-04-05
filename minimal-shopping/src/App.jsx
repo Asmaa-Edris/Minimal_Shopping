@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import AllProducts from './pages/AllProducts';
 import ProductDetails from './pages/ProductDetails';
@@ -20,7 +19,7 @@ function App() {
             <Route path="/login" element={<Login />} />
           </Routes>
         </main>
-        <Footer />
+      
       </div>
     </Router>
   );
