@@ -8,7 +8,7 @@ function ProductDetails() {
   const [product, setProduct] = useState(null);
   const [added, setAdded] = useState(false);
   const [selectedSize, setSelectedSize] = useState(null);
-  const sizes = ['S', 'M', 'L', 'XL'];
+  const sizes = ['XS', 'S', 'M', 'L'];
 
   useEffect(() => {
     getProductById(id).then(data => setProduct(data));
@@ -31,11 +31,18 @@ function ProductDetails() {
           </div>
 
           <div className="product-info">
+            <div className="product-new-badge">New!</div>
             <h1>{product.title}</h1>
             <p className="price">${product.price}</p>
-            <p className="brand">{product.brand}</p>
-            <p className="category">{product.category}</p>
-            <p className="description">{product.description}</p>
+            <p className="brand">Brand: {product.brand}</p>
+            
+            <div className="description">
+              <p>Relaxed fit</p>
+              <p>Crew neck</p>
+              <p>Drop shoulder sleeves</p>
+              <p>Elasticated neckline, hemline and cuffs</p>
+              <p>Made in Russia</p>
+            </div>
 
             {/* Size choices */}
             <div className="size-selector">
@@ -54,7 +61,7 @@ function ProductDetails() {
               </ div>
             </ div>
 
-            <button className="add-cart" onClick={handleAddToCart}>Add to cart</button>
+            <button className="add-cart" onClick={handleAddToCart}>Add to Cart</button>
 
             {added && (<p className="added-message">Added to Cart</p>)}
           </div>

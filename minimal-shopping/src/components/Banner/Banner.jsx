@@ -21,7 +21,7 @@ function Banner() {
             <div className="banner-content">
                 <p className="banner-title">
                     Get 50% Off on<br />
-                    Selected categories
+                    <span className="highlight-box">Selected categories</span>
                 </p>
             </div>
         </section>

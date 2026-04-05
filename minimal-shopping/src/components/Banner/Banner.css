@@ -54,8 +54,14 @@
     font-family: 'Outfit', sans-serif;
     font-size: 40px;        
     font-weight: 500;       
-    line-height: 100%;      
+    line-height: 1.2;      
     margin: 0;
-     width: 367,91px;  
-    height: 101.11px;
+}
+
+.highlight-box {
+    background-color: #FFB300; 
+    color: #000000;
+    padding: 2px 8px;
+    display: inline-block;
+    border-radius: 4px;
 }
