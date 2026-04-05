@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png'
-import { HiOutlineUser } from 'react-icons/hi2';  // heroicons set
+import logo from '../../assets/images/logo.png'
+import './navbar.css';
+import { HiUser } from 'react-icons/hi2'; 
 
 export default function Navbar() {
     return (
@@ -13,7 +14,7 @@ export default function Navbar() {
             
             <div className="navbar-right">
                 <Link to="/login" className="user-icon">
-                    <HiOutlineUser size= {22}/>
+                    <HiUser size={24} color="#727171"/>
                 </Link>
             </div>
         </nav>
