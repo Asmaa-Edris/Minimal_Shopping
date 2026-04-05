@@ -1,27 +1,27 @@
 import personImg from '../../assets/images/person.png';
-import iconsPattern from '../../assets/images/icons.svg'; 
+import iconsPattern from '../../assets/images/icons.svg';
 import './Banner.css';
 
 function Banner() {
     return (
         <section className="banner">
-            <div 
-                className="banner-pattern" 
+            <div
+                className="banner-pattern"
                 style={{ backgroundImage: `url(${iconsPattern})` }}
             ></div>
 
             <div className="banner-images">
-                <img 
-                    src={personImg} 
-                    alt="Person Left" 
-                    className="img-person banner-left-person" 
+                <img
+                    src={personImg}
+                    alt="Person Left"
+                    className="img-person banner-left-person"
                 />
             </div>
 
             <div className="banner-content">
                 <p className="banner-title">
                     Get 50% Off on<br />
-                    <span className="highlight-box">Selected categories</span>
+                    <span className="banner-content">Selected categories</span>
                 </p>
             </div>
         </section>
